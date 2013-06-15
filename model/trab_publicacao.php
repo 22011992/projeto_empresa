@@ -7,8 +7,7 @@ class trabPublicação extends dbConnection {
     
     public function setIdPublicacao($idPublicacao){
         $this->id_publicacao = $idPublicacao;
-    }
-    
+    }   
     public function setIdTrabalho($idTrabalho){
         $this->id_trabalho = $idTrabalho;
     }
@@ -16,7 +15,6 @@ class trabPublicação extends dbConnection {
     public function getIdPublicacao(){
         return $this->id_publicacao;
     }
-
     public function getIdTrabalho(){
         return $this->id_trabalho;
     } 

@@ -31,7 +31,7 @@ class funcoes extends dbConnection{
         return $this->email_pessoa;
     }
     
-    public function setFuncao($funcao){
+    public function setFuncao($funcao=A){
         $this->funcao = $funcao;
     }
     public function getFuncao() {

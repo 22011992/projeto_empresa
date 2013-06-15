@@ -24,13 +24,16 @@ class publicacao extends dbConnection {
         return $this;
     }
 
-    public function getDataPublicacao() {
-        return $this->data_publicacao;
+    public function getDataPublicacao($us=false) {
+        if($us){
+            return $this->data_publicacao;
+        }else {
+            return $this->dateToBR($this->data_publicacao);
+        }       
     }
 
-    public function setDataPublicacao($data_publicacao) {
-        $this->data_publicacao = $data_publicacao;
-        return $this;
+    public function setDataPublicacao($dateBR) {
+        $this->data_publicacao = $this->dateToUS($dateBR);
     }
 
 
